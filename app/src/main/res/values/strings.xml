@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FragmentExample1</string>
+    <string name="textToSend">Value From Activity To Fragment</string>
+</resources>

@@ -24,7 +24,7 @@ int id;
         public void onReturn(String value);
     }
 
-    public FragmentListener listener;
+    public static FragmentListener listener;
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {

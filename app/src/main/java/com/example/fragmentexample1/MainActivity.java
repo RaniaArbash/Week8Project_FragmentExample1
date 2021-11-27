@@ -19,22 +19,15 @@ public class MainActivity extends AppCompatActivity implements FragmentTwo.Fragm
         setContentView(R.layout.activity_main);
         text = findViewById(R.id.text);
         fm = getSupportFragmentManager();
-
     }
-
     public void AddFragmentTwo(View view) {
-//        Bundle bundle1 = new Bundle();
-//        bundle1.putInt("imageid",R.drawable.img);
          fragmentTwo = new FragmentTwo(R.drawable.img);
         fragmentTwo.listener = this;
-
         fm.beginTransaction().add(R.id.fragment_container_view,fragmentTwo,"tag").commit();
     }
-
     @Override
     public void onReturn(String value) {
         text.setText(value);
         getSupportFragmentManager().beginTransaction().remove(fragmentTwo).commit();
-
     }
 }
